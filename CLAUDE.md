@@ -295,27 +295,117 @@ date: 2025-10-14
 
 ## Current Status
 
-- ✅ Hugo site configured
-- ✅ Clarity theme installed
-- ✅ Mission and vision updated
+### Completed ✅
+- ✅ Hugo site configured with Clarity theme
+- ✅ Mission and vision content updated
 - ✅ Core pages created (Home, About, Programs)
+- ✅ Enhanced home page with comprehensive sections
+- ✅ RKL logo integrated (concentric circles design)
+- ✅ Custom home layout created (`layouts/index.html`)
+- ✅ GitHub Actions deployment pipeline configured
+- ✅ CNAME file created for custom domain
+- ✅ Automatic deployment to `gh-pages` branch working
+
+### In Progress ⏳
+- ⏳ **DNS Configuration** - Need to add DNS records at domain registrar
+- ⏳ **Enable GitHub Pages** - Ready to enable when site is polished
 - ⏳ Contact page (needs creation)
 - ⏳ Blog setup (future)
-- ⏳ Domain DNS configuration (pending)
-- ⏳ Hosting/deployment (TBD: GitHub Pages, Netlify, or Vercel)
+
+### Site Ready But NOT LIVE
+The site is built and ready at the `gh-pages` branch, but **NOT publicly accessible** until you enable GitHub Pages in repository settings.
+
+---
+
+## Deployment Setup (GitHub Pages)
+
+### Current Deployment Status
+- **Pipeline**: ✅ Working (auto-deploys on push to `main`)
+- **Built Site**: ✅ Available in `gh-pages` branch
+- **Custom Domain**: ✅ Configured (`resonantknowledgelab.org`)
+- **Public Site**: ❌ NOT live (GitHub Pages disabled)
+
+### GitHub Actions Workflow
+Location: `.github/workflows/deploy.yml`
+
+**What it does:**
+1. Triggers on every push to `main` branch
+2. Checks out code with submodules
+3. Sets up Hugo (latest extended version)
+4. Builds site with `hugo --minify`
+5. Deploys to `gh-pages` branch
+
+**Monitor workflow**: https://github.com/mbbrady/rkl.org/actions
+
+### To Make Site Live (When Ready)
+
+**Step 1: Enable GitHub Pages**
+1. Go to: https://github.com/mbbrady/rkl.org/settings/pages
+2. Under "Source", select: **Deploy from a branch**
+3. Choose branch: **gh-pages** / **/ (root)**
+4. Custom domain should show: **resonantknowledgelab.org**
+5. Check "Enforce HTTPS" (recommended)
+
+**Step 2: Configure DNS at Domain Registrar**
+
+For apex domain (`resonantknowledgelab.org`), add these **A records**:
+```
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+```
+
+For www subdomain (optional), add **CNAME record**:
+```
+www.resonantknowledgelab.org → mbbrady.github.io
+```
+
+**Step 3: Wait for DNS Propagation**
+- DNS changes take 24-48 hours to propagate
+- Check DNS status: `dig resonantknowledgelab.org`
+- GitHub will auto-issue SSL certificate once DNS is configured
+
+### To Take Site Down
+1. Go to: https://github.com/mbbrady/rkl.org/settings/pages
+2. Change "Source" to **"None"**
+3. Site immediately goes offline
 
 ---
 
 ## Helpful Commands
 
-### Preview the site
+### Preview the site locally
 ```bash
-cd /home/mike/project/rkl/rkl.org && hugo server -D
+# Using conda environment with Hugo
+source /home/mike/miniforge3/bin/activate rkl-web
+cd /home/mike/project/rkl/rkl.org
+hugo server -D
+
+# View at: http://localhost:1313
 ```
 
 ### Build for production
 ```bash
 cd /home/mike/project/rkl/rkl.org && hugo
+```
+
+### Deploy changes
+```bash
+cd /home/mike/project/rkl/rkl.org
+git add .
+git commit -m "Update content"
+git push origin main
+# GitHub Actions will auto-deploy to gh-pages
+```
+
+### Check deployment status
+```bash
+# View recent workflow runs
+gh run list --limit 5
+
+# View specific run
+gh run view <run-id>
 ```
 
 ### Check for broken links
@@ -331,6 +421,53 @@ grep -r "keyword" content/
 
 ---
 
+## Website Structure
+
+### Custom Files Created
+- `layouts/index.html` - Custom home page layout (overrides theme's post archive)
+- `static/logos/rkl-logo.png` - RKL logo with concentric circles
+- `static/CNAME` - Custom domain configuration for GitHub Pages
+- `.gitignore` - Excludes build artifacts and sensitive files
+
+### Key Content Files
+- `content/_index.md` - Enhanced home page with 7 sections
+- `content/about.md` - Mission, vision, guiding principles
+- `content/programs.md` - Detailed program areas with objectives
+- `config.toml` - Site configuration with logo and custom domain
+
+### Hugo Environment
+- **Conda Environment**: `rkl-web`
+- **Location**: `/home/mike/miniforge3/envs/rkl-web`
+- **Hugo Version**: v0.151.0+extended
+- **Activate**: `source /home/mike/miniforge3/bin/activate rkl-web`
+
+---
+
+## Next Steps
+
+### Immediate (Before Going Live)
+1. **Test the live site** once DNS is configured
+2. **Review all pages** for content accuracy and typos
+3. **Test on mobile devices** to ensure responsive design
+4. **Add contact page** with email and social links
+5. **Review SEO metadata** on all pages
+
+### Short Term (1-2 Weeks)
+1. **Set up Google Analytics** (pending board approval)
+2. **Create blog section** for updates and announcements
+3. **Add team/board page** with appropriate public information
+4. **Create project showcase pages** for Closed RAG Initiative and other programs
+5. **Add newsletter signup** (if desired)
+
+### Medium Term (1-3 Months)
+1. **Publish first blog post** about RKL launch
+2. **Add case studies** and success stories
+3. **Create resources section** with downloadable materials
+4. **Integrate social media feeds** (if accounts exist)
+5. **Set up search functionality** (Clarity theme supports it)
+
+---
+
 ## Key Principles for AI Assistants
 
 When working with this website:
@@ -341,6 +478,8 @@ When working with this website:
 4. **Consistency**: Match tone and style of existing content
 5. **SEO-Friendly**: Use descriptive titles and meta descriptions
 6. **Build Before Deploy**: Always test with `hugo` before pushing
+7. **Hugo Environment**: Always activate `rkl-web` conda environment before running Hugo
+8. **Auto-Deploy**: Remember that pushing to `main` triggers automatic deployment
 
 ---
 
@@ -348,11 +487,14 @@ When working with this website:
 
 - **Hugo Documentation**: https://gohugo.io/documentation/
 - **Clarity Theme**: https://github.com/chipzoller/hugo-clarity
+- **GitHub Pages Docs**: https://docs.github.com/en/pages
 - **Mission Content**: See private repo `rkl-program/` for full versions
 - **Organizational Context**: See `../rkl-program/CLAUDE.md`
+- **GitHub Repository**: https://github.com/mbbrady/rkl.org
+- **GitHub Actions**: https://github.com/mbbrady/rkl.org/actions
 
 ---
 
 **Last updated**: 2025-10-14
-**Status**: Active development
-**Next milestone**: Set up hosting and deploy live site
+**Status**: Website built and ready - DNS/deployment pending
+**Next milestone**: Configure DNS and enable GitHub Pages when ready to go live
