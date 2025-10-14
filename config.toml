@@ -1,0 +1,26 @@
+baseURL = "https://resonantknowledgelab.org/"
+languageCode = "en-us"
+title = "Resonant Knowledge Lab"
+theme = "clarity"
+copyright = "© 2025 Resonant Knowledge Lab"
+enableRobotsTXT = true
+
+[params]
+  description = "An open research lab exploring ethical AI, local knowledge systems, and secure information design."
+  themeVariant = "light"
+  accentColor = "#0F4C81"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+  [[menu.main]]
+    name = "Data Ethics"
+    url = "/data-ethics/"
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+
