@@ -1,0 +1,41 @@
+# Hugo build artifacts
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*~
+*.swp
+*.bak
+
+# Temporary files
+*.tmp
+~$*
+
+# Node modules (if using npm tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Environment files
+.env
+.env.local
+*.env
+
+# Logs
+*.log

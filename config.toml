@@ -6,21 +6,27 @@ copyright = "© 2025 Resonant Knowledge Lab"
 enableRobotsTXT = true
 
 [params]
-  description = "An open research lab exploring ethical AI, local knowledge systems, and secure information design."
+  description = "Ethical AI for Living Knowledge - A Virginia-based 501(c)(3) nonprofit advancing ethical, community-governed artificial intelligence."
+  tagline = "Ethical AI for Living Knowledge"
   themeVariant = "light"
   accentColor = "#0F4C81"
+  logo = "/logos/rkl-logo.png"
 
 [menu]
   [[menu.main]]
     name = "About"
     url = "/about/"
+    weight = 1
   [[menu.main]]
-    name = "Projects"
-    url = "/projects/"
+    name = "Programs"
+    url = "/programs/"
+    weight = 2
   [[menu.main]]
     name = "Data Ethics"
     url = "/data-ethics/"
+    weight = 3
   [[menu.main]]
     name = "Contact"
     url = "/contact/"
+    weight = 4
 
