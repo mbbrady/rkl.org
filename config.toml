@@ -6,8 +6,8 @@ copyright = "© 2025 Resonant Knowledge Lab"
 enableRobotsTXT = true
 
 [params]
-  description = "Ethical AI for Living Knowledge - A Virginia-based 501(c)(3) nonprofit advancing ethical, community-governed artificial intelligence."
-  tagline = "Ethical AI for Living Knowledge"
+  description = "Trusted Reasoning for Living Knowledge - A Virginia-based 501(c)(3) nonprofit creating open infrastructure that enables reasoning systems like GPT and Claude to work with knowledge domains organizations choose to expose—without transferring sensitive information."
+  tagline = "Trusted Reasoning for Living Knowledge"
   themeVariant = "light"
   accentColor = "#0F4C81"
   logo = "/logos/rkl-logo.png"

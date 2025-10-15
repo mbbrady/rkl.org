@@ -3,11 +3,11 @@ title: "Resonant Knowledge Lab"
 description: "Ethical AI for Living Knowledge"
 ---
 
-# Ethical AI for Living Knowledge
+# Trusted Reasoning for Living Knowledge
 
-Welcome to the **Resonant Knowledge Lab** — a Virginia-based 501(c)(3) nonprofit dedicated to advancing ethical, community-governed artificial intelligence.
+Welcome to the **Resonant Knowledge Lab** — a Virginia-based 501(c)(3) nonprofit creating open infrastructure that enables reasoning systems like GPT and Claude to work with knowledge domains organizations choose to expose—without transferring or compromising sensitive information.
 
-**Our mission is to make human knowledge — in all its cultural, institutional, and environmental forms — discoverable, accessible, and securely interoperable with AI.**
+**We provide tools that help organizations select, curate, and govern which knowledge to make accessible to AI—from peer-reviewed research to institutional data—maintaining full agency over what is exposed and how it can be used.**
 
 ---
 
@@ -21,48 +21,54 @@ Traditional AI development often extracts data without context, erodes local aut
 
 ## Our Approach
 
-RKL envisions a world where communities maintain full agency over their knowledge while benefiting from the power of artificial intelligence. We believe AI can **enhance, rather than erode, local autonomy** — provided it is built on principles of transparency, reciprocity, and security.
+RKL envisions a world where every organization, practitioner, and community can reason with both the knowledge it holds and the most current, authoritative understanding in its field.
 
-Through open protocols, distributed infrastructure, and ethical design, we're building the foundation for an ecosystem of **trust-based AI** that strengthens cultural continuity, institutional integrity, and environmental resilience.
+We provide **open, verifiable methods and reproducible infrastructure** that let large-scale reasoning systems and locally hosted models engage with curated, governed knowledge domains—using protocols like Model Context Protocol (MCP) and policy-aware retrieval architectures (RAG+).
+
+Organizations maintain full control: they select which knowledge domains to expose (peer-reviewed literature, institutional data, operational knowledge, community experience), how they can be accessed, and under what governance terms.
 
 ---
 
 ## What We Do
 
-### [Ethical AI & Knowledge Stewardship](/programs#ethical-ai)
-We develop governance frameworks for AI systems that respect cultural, local, and institutional boundaries of data use. From our AI Governance Playbook to our annual Ethics Fellowship, we're helping organizations adopt AI responsibly.
+### [Open Protocols for Contextual AI](/programs#open-protocols)
+We apply and refine public-interest protocols like Model Context Protocol (MCP) that define how reasoning systems interact securely with governed knowledge domains.
 
-### [Local & Indigenous Knowledge Systems](/programs#indigenous-knowledge)
-We support communities in digitizing and responsibly integrating traditional knowledge into AI systems without loss of ownership or cultural integrity — including traditional ecological knowledge and oral histories.
+### [Reference Implementations & Toolkits](/programs#implementations)
+We build open-source adapters, audit logging systems, and reproducible on-premises stacks that organizations can deploy to connect AI systems with their curated knowledge.
 
-### [Organizational Knowledge Resilience](/programs#organizational-resilience)
-We help nonprofits, academic institutions, and civic agencies design closed-context AI systems that preserve institutional memory while maintaining data security.
+### [Decision Support & Knowledge Access Pilots](/programs#pilots)
+We partner with organizations to deploy real-world systems that help clinicians, planners, researchers, and practitioners access both current research and institutional knowledge through natural-language interaction.
 
-### [Open Infrastructure & Secure Contexts](/programs#open-infrastructure)
-We build auditable, privacy-preserving architectures that allow communities and organizations to manage their own AI contexts transparently using affordable, energy-efficient hardware.
+### [Governance & Stewardship Frameworks](/programs#governance)
+We publish templates for consent, data licensing, and policy-based access control—helping organizations define who can access what knowledge under which conditions.
 
-### [Public Education & Collaboration](/programs#education)
-We advance public understanding of ethical AI through education, outreach, and collaborative research — including our annual Resonant Symposium and open educational resources.
+### [Research & Applied Inquiry](/programs#research)
+Through research partnerships (e.g., NSF-funded projects), we study how human-machine reasoning can responsibly contribute to knowledge creation and organizational learning.
+
+### [Education & Public Engagement](/programs#education)
+We build capacity through workshops, curricula, and training labs that help organizations understand and implement ethical AI and knowledge governance.
 
 ---
 
 ## Our Guiding Principles
 
-- **Respect & Reciprocity** – Every project begins with consent and collaboration, not extraction
-- **Transparency & Accountability** – All systems are auditable and open to community review
-- **Security & Sovereignty** – Knowledge remains under the stewardship of its rightful community
-- **Interoperability with Integrity** – Data connects ethically without compromising context
-- **Resonance Over Extraction** – We amplify human knowledge by aligning technology with lived experience
+- **Context Over Content** – Models engage with knowledge context through controlled interfaces, not raw data transfer
+- **Protocols Over Platforms** – The trust layer of AI must remain open, inspectable, and non-proprietary
+- **Verification Over Assumption** – Privacy, provenance, and consent must be provable, not implied
+- **Governance by Design** – Human and organizational governance are encoded in the architecture itself
+- **Resonance Through Reuse** – Knowledge gains value when it can be rediscovered and applied across time
+- **Education Through Implementation** – Each pilot functions as both research and training
 
 ---
 
-## Current Focus (2025-2027)
+## Year 1 Focus (2025-2026)
 
-**Flagship Initiative:** The **Closed RAG Initiative** — demonstrating organization-specific, auditable AI retrieval systems that keep knowledge secure while making it accessible.
+**MCP + Closed RAG Reference Stack:** Building and documenting a reproducible, privacy-preserving AI context environment using local compute—demonstrating "trust through protocol" in practice.
 
-**Infrastructure Build:** Establishing RKL's core research and compute environment in Virginia, including a secure AI cluster for R&D and partner use.
+**Field Pilot:** Partnering with one organization (archive, clinic, or municipality) to deploy and validate the RKL stack in a real-world context, producing a public case study.
 
-**Partnership Development:** Formalizing collaborations with universities, NGOs, and Indigenous data stewards to pilot ethical AI systems.
+**Governance Toolkit v1:** Publishing templates for consent, data licensing, and policy-based access that bridge technical and institutional audiences.
 
 ---
 
