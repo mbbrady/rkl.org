@@ -495,6 +495,34 @@ When working with this website:
 
 ---
 
-**Last updated**: 2025-10-14
-**Status**: Website built and ready - DNS/deployment pending
-**Next milestone**: Configure DNS and enable GitHub Pages when ready to go live
+## Recent Updates (2025-10-15)
+
+### Mission Statement Revision
+- **Complete mission overhaul** - Changed from values-focused to infrastructure-focused
+- **Key clarification**: Organizations choose what knowledge to expose; RKL provides infrastructure
+- **GPT/Claude examples added** for general audience clarity
+- **Updated tagline**: "Trusted Reasoning for Living Knowledge"
+- **New architecture emphasis**: MCP, RAG+, policy-aware retrieval
+
+### Compute Infrastructure Addition
+- Added "Independent Computational Infrastructure" section to programs page
+- Documents RKL's local GPU nodes, secure networking, monitoring systems
+- Emphasizes research independence from commercial cloud providers
+- Links to annual Infrastructure Transparency Report
+
+### Content Updates
+- **Home page** (_index.md): New mission, 6 revised program areas, updated principles
+- **About page** (about.md): Full mission/vision replacement with organizational role
+- **Programs page** (programs.md): Complete rewrite with use cases table and Year 1 focus
+- **Config** (config.toml): Updated description and tagline for SEO
+
+### Files Changed
+- 4 content files updated
+- All changes committed and deployed via GitHub Actions
+- Website auto-rebuilt and available (not yet publicly live)
+
+---
+
+**Last updated**: 2025-10-15
+**Status**: Major mission revision complete - Website ready for review
+**Next milestone**: Review updated content, then configure DNS and enable GitHub Pages when ready to go live
