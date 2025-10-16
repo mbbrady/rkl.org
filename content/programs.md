@@ -46,6 +46,9 @@ We build open-source adapters and sandboxes for secure AI integration.
 - Audit and compliance tooling
 - Integration libraries for Python, JavaScript, and other languages
 
+**Independent Computational Infrastructure:**
+RKL maintains independent computational infrastructure (local GPU nodes, secure networking, monitoring systems) to ensure research is performed reproducibly and auditability. This infrastructure supports all reference implementations and enables transparent, public-interest AI research free from commercial dependencies. See our annual [Infrastructure Transparency Report](#) for details on hardware, energy usage, and research outcomes.
+
 ---
 
 ### Decision Support & Knowledge Access Pilots {#pilots}
