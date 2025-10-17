@@ -9,9 +9,9 @@
 
 ## Project Overview
 
-This is the **public website repository** for Resonant Knowledge Lab (RKL), a Virginia-based 501(c)(3) nonprofit dedicated to advancing ethical, community-governed artificial intelligence.
+This is the **public website repository** for Resonant Knowledge Lab (RKL), a Virginia-based 501(c)(3) nonprofit.
 
-**Mission**: To make human knowledge — in all its cultural, institutional, and environmental forms — discoverable, accessible, and securely interoperable with AI.
+**Mission**: RKL creates **open, verifiable methods and reproducible infrastructure** that enable **large-scale reasoning systems (like GPT and Claude) and locally hosted models** to engage responsibly with **curated, locally governed knowledge domains**—without exposing or transferring them.
 
 **Tagline**: Ethical AI for Living Knowledge
 
@@ -57,13 +57,15 @@ rkl.org/
 
 ### About Page (`content/about.md`)
 - Full mission and vision
-- Guiding principles (5 core principles)
+- Guiding principles (6 core principles)
+- Core purpose
+- Organizational role
 - About RKL section
 
 ### Programs Page (`content/programs.md`)
-- Five core program areas
-- 2025-2027 goals
-- Current projects (Closed RAG Initiative, Arctic AI)
+- Six core program areas
+- Year 1 focus (2025-2026)
+- Illustrative use cases across sectors
 - Call to action for collaboration
 
 ### Data Ethics Page (`content/data-ethics.md`)
@@ -73,26 +75,25 @@ rkl.org/
 
 ## Mission Statement (Website Version)
 
-### Single Sentence (Most Used)
-> Our mission is to make human knowledge — in all its cultural, institutional, and environmental forms — discoverable, accessible, and securely interoperable with AI.
+### One-Sentence (Elevator Pitch)
+> RKL provides open infrastructure that enables reasoning systems like GPT and Claude to work with knowledge domains organizations choose to expose—from peer-reviewed research to institutional data—without transferring or compromising sensitive information.
+
+### One-Paragraph (Website/Summary)
+> Resonant Knowledge Lab (RKL) is a nonprofit creating open, verifiable methods that enable large-scale reasoning systems (like GPT and Claude) and locally hosted models to engage responsibly with curated, locally governed knowledge domains—without exposing or transferring them. We provide tools and methods that help organizations select, curate, and govern which knowledge to make accessible to reasoning systems, maintaining full agency over what is exposed and how it can be used.
 
 ### Tagline (Shortest)
 > Ethical AI for Living Knowledge
-
-### Two Paragraphs (For About Page)
-> Resonant Knowledge Lab (RKL) is a nonprofit research and development organization dedicated to advancing ethical, community-governed artificial intelligence.
->
-> We explore how local, indigenous, and organizational knowledge can be securely integrated into AI through transparent, auditable architectures that protect privacy, context, and data sovereignty.
 
 ---
 
 ## Core Programs (Brief)
 
-1. **Ethical AI & Knowledge Stewardship**
-2. **Local & Indigenous Knowledge Systems**
-3. **Organizational Knowledge Resilience**
-4. **Open Infrastructure & Secure Contexts**
-5. **Public Education & Collaboration**
+1. **Open Protocols for Contextual AI**
+2. **Reference Implementations & Toolkits**
+3. **Decision Support & Knowledge Access Pilots**
+4. **Governance & Stewardship Frameworks**
+5. **Research & Applied Inquiry**
+6. **Education & Public Engagement**
 
 See `/content/programs.md` for full details.
 
@@ -377,8 +378,11 @@ www.resonantknowledgelab.org → mbbrady.github.io
 
 ### Preview the site locally
 ```bash
-# Using conda environment with Hugo
-source /home/mike/miniforge3/bin/activate rkl-web
+# Using conda environment with Hugo (environments stored in /opt/conda-envs/)
+/opt/conda-envs/envs/rkl-web/bin/hugo server -D
+
+# Or activate the environment first:
+source /home/mike/miniforge3/bin/activate /opt/conda-envs/envs/rkl-web
 cd /home/mike/project/rkl/rkl.org
 hugo server -D
 
@@ -437,9 +441,10 @@ grep -r "keyword" content/
 
 ### Hugo Environment
 - **Conda Environment**: `rkl-web`
-- **Location**: `/home/mike/miniforge3/envs/rkl-web`
+- **Location**: `/opt/conda-envs/envs/rkl-web` (all conda environments moved to /opt)
 - **Hugo Version**: v0.151.0+extended
-- **Activate**: `source /home/mike/miniforge3/bin/activate rkl-web`
+- **Activate**: `source /home/mike/miniforge3/bin/activate /opt/conda-envs/envs/rkl-web`
+- **Direct Path**: `/opt/conda-envs/envs/rkl-web/bin/hugo`
 
 ---
 
