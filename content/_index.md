@@ -6,9 +6,8 @@ intro_image_absolute: false
 intro_image_hide_on_mobile: true
 ---
 
-# Secure Co-Design Between Frontier AI and Human Knowledge
+# Secure Coproduction with AI
 
-Open infrastructure enabling reasoning systems to work with curated, locally governed knowledge domains—without exposing or transferring them.
+Open infrastructure enabling large-scale artificial intelligence reasoning systems to interact securely with curated, locally governed knowledge domains — without exposing or transferring sensitive data.
 
-**Phone:** (555) 123-4567
-**Email:** [info@resonantknowledgelab.org](mailto:info@resonantknowledgelab.org)
+[info@resonantknowledgelab.org](mailto:info@resonantknowledgelab.org)

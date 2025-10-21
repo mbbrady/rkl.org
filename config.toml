@@ -10,12 +10,12 @@ enableRobotsTXT = true
   favicon = "favicon-32x32.svg"
 
   [params.logo]
-    mobile = "images/logo/logo-mobile.svg"
-    mobile_height = "36px"
-    mobile_width = "36px"
-    desktop = "images/logo/logo.svg"
-    desktop_height = "42px"
-    desktop_width = "42px"
+    mobile = "images/logo.png"
+    mobile_height = "40px"
+    mobile_width = "auto"
+    desktop = "images/logo.png"
+    desktop_height = "50px"
+    desktop_width = "auto"
     alt = "Resonant Knowledge Lab"
 
   [params.homepage]
