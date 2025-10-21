@@ -51,7 +51,7 @@ rkl.org/
 ## Key Content Pages
 
 ### Home Page (`content/_index.md`)
-- Tagline: "Ethical AI for Living Knowledge"
+- Hero title: "Secure Co-Design Between Frontier AI and Human Knowledge"
 - Mission statement (one-sentence version)
 - Welcome text
 

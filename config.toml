@@ -1,16 +1,42 @@
 baseURL = "https://resonantknowledgelab.org/"
 languageCode = "en-us"
 title = "Resonant Knowledge Lab"
-theme = "clarity"
+theme = "serif"
 copyright = "© 2025 Resonant Knowledge Lab"
 enableRobotsTXT = true
 
 [params]
-  description = "Trusted Reasoning for Living Knowledge - A Virginia-based 501(c)(3) nonprofit creating open infrastructure that enables reasoning systems like GPT and Claude to work with knowledge domains organizations choose to expose—without transferring sensitive information."
-  tagline = "Trusted Reasoning for Living Knowledge"
-  themeVariant = "light"
-  accentColor = "#0F4C81"
-  logo = "/logos/rkl-logo.png"
+  google_analytics_id = ""
+  favicon = "favicon-32x32.svg"
+
+  [params.logo]
+    mobile = "images/logo/logo-mobile.svg"
+    mobile_height = "36px"
+    mobile_width = "36px"
+    desktop = "images/logo/logo.svg"
+    desktop_height = "42px"
+    desktop_width = "42px"
+    alt = "Resonant Knowledge Lab"
+
+  [params.homepage]
+    sticky_header = true
+    show_contact_box = false
+    show_services_button = true
+
+  [params.fonts]
+    google_fonts = 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro:wght@400;700&display=swap'
+    heading = "Playfair Display"
+    base = "Source Sans Pro"
+
+  [params.colors]
+    primary = "#ff8b7b"
+    black = "#0a2342"
+    white = "#ffffff"
+    white_offset = "#f9f9fb"
+    grey = "#5C5A5A"
+
+  [params.footer]
+    copyright_text = '© 2025 Resonant Knowledge Lab'
 
 [menu]
   [[menu.main]]
