@@ -528,6 +528,43 @@ When working with this website:
 
 ---
 
-**Last updated**: 2025-10-15
-**Status**: Major mission revision complete - Website ready for review
+## CSS Styling Notes
+
+### Lines of Effort Section Card Normalization
+
+The homepage "Lines of Effort" section uses equal-height cards with normalized heading heights to ensure consistent alignment across the grid. This is critical for visual consistency when card titles have different lengths.
+
+**Location**: `/static/css/rkl-custom.css`
+
+**Key CSS for Card Heading Alignment**:
+```css
+/* Normalize card heading height for alignment */
+.effort-card h4 {
+  font-family: var(--bs-font-serif, 'Libre Baskerville', serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #0B2545;
+  min-height: 3.5rem;   /* ensures even vertical rhythm */
+  margin-bottom: 0.75rem;
+}
+```
+
+**Why this matters**:
+- Cards have 1-2 word titles (e.g., "Open Protocols", "Field Pilots")
+- `min-height: 3.5rem` reserves consistent space for all titles
+- This prevents body text from starting at different heights
+- Creates professional, aligned grid layout across all 6 cards
+- Works with flexbox equal-height cards (`.d-flex` + `.flex-fill`)
+
+**Card Animation**:
+- Scroll-triggered fade-in using IntersectionObserver (vanilla JS, no dependencies)
+- CSS transitions with staggered delays (0.1s, 0.2s between cards)
+- Cards start at `opacity: 0` and `translateY(10px)`, animate to visible on scroll
+- Script location: `/layouts/_default/baseof.html` (before closing `</body>`)
+
+---
+
+**Last updated**: 2025-10-22
+**Status**: Lines of Effort section complete with animations and normalized card heights
 **Next milestone**: Review updated content, then configure DNS and enable GitHub Pages when ready to go live
