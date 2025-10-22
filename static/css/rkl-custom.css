@@ -999,7 +999,9 @@ footer a {
   color: #0B2545;
   font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  min-height: 3.5rem; /* balances 1- and 2-line titles */
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
   letter-spacing: -0.01em;
 }
 
