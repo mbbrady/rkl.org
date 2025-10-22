@@ -563,6 +563,22 @@ The homepage "Lines of Effort" section uses equal-height cards with normalized h
 - Cards start at `opacity: 0` and `translateY(10px)`, animate to visible on scroll
 - Script location: `/layouts/_default/baseof.html` (before closing `</body>`)
 
+**Implementation Note - Title Strategy**:
+
+The Lines of Effort cards use **short, scannable titles** on the homepage for clarity and visual rhythm:
+- Active Programs: "Open Protocols", "Reference Toolkits", "Field Pilots"
+- Emerging Areas: "Governance Frameworks", "Applied Research", "Education & Outreach"
+
+**For detailed pages** (About, Programs, documentation), use the **extended descriptive forms**:
+- "Open Protocols for Contextual AI"
+- "Reference Implementations & Toolkits"
+- "Decision Support & Field Pilots"
+- "Governance & Stewardship Frameworks"
+- "Research & Applied Inquiry"
+- "Education & Public Engagement"
+
+This keeps the public front page concise while internal pages remain authoritative—exactly the tone a research-driven nonprofit like RKL should project.
+
 ---
 
 **Last updated**: 2025-10-22
