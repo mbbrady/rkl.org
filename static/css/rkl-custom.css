@@ -1,6 +1,15 @@
 /* RKL Custom Styles - Inspired by Let's Encrypt clean design */
 /* Original design - no code copied */
 
+/* Prevent layout shift and scroll jump */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-display: swap; /* prevent top jump from late font rendering */
+}
+
 :root {
   --rkl-blue: #0F4C81;
   --rkl-blue-light: #4A90E2;
@@ -1030,6 +1039,7 @@ footer a {
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform; /* stabilize animation reflow */
 }
 
 .effort-card.visible {
