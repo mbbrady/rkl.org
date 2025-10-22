@@ -72,6 +72,14 @@
   {{ partial "google-tag-manager.html" . }}
   {{ partial "google-analytics.html" . }}
 
+  <!-- Prevent browser scroll restoration on page load -->
+  <script>
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  window.scrollTo(0, 0);
+  </script>
+
   <!-- Scroll-triggered fade-in animation for effort cards -->
   <script>
   document.addEventListener("DOMContentLoaded", function () {
