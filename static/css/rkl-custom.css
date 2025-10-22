@@ -991,7 +991,7 @@ footer a {
   transition: all 0.25s ease;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start; /* align from top, no vertical push */
 }
 
 .effort-card h4 {
@@ -999,9 +999,10 @@ footer a {
   color: #0B2545;
   font-size: 1.1rem;
   font-weight: 600;
-  min-height: 3.5rem; /* balances 1- and 2-line titles */
+  line-height: 1.25; /* tighter, matches heading standards */
+  min-height: 2.6em; /* ~2 lines @ 1.25 line-height */
+  margin-top: 0; /* prevent margin collapse quirks */
   margin-bottom: 0.75rem;
-  line-height: 1.3;
   letter-spacing: -0.01em;
 }
 
@@ -1009,6 +1010,7 @@ footer a {
   font-size: 0.95rem;
   color: #555;
   line-height: 1.6;
+  margin-top: 0; /* prevent unexpected top margin */
   margin-bottom: 0;
 }
 
