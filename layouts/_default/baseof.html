@@ -71,6 +71,24 @@
 
   {{ partial "google-tag-manager.html" . }}
   {{ partial "google-analytics.html" . }}
+
+  <!-- Scroll-triggered fade-in animation for effort cards -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    document.querySelectorAll(".effort-card").forEach(card => observer.observe(card));
+  });
+  </script>
 </body>
 
 </html>

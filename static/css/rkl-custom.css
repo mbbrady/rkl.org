@@ -1021,6 +1021,27 @@ footer a {
   background-color: #ccc;
 }
 
+/* === Fade-in Animation for Cards === */
+.effort-card {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.effort-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered animation delays for visual flow */
+.effort-card:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.effort-card:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
 /* Responsive tuning */
 @media (max-width: 768px) {
   .section-intro {
