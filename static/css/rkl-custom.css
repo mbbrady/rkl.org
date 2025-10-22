@@ -1034,7 +1034,21 @@ footer a {
   background-color: #ccc;
 }
 
-/* === Fade-in Animation for Cards === */
+/* === Fade-in Animation for Sections and Cards === */
+
+/* Section-level fade-in */
+.fade-section {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Card-level fade-in */
 .effort-card {
   opacity: 0;
   transform: translateY(10px);

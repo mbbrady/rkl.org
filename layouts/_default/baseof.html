@@ -80,21 +80,24 @@
   window.scrollTo(0, 0);
   </script>
 
-  <!-- Scroll-triggered fade-in animation for effort cards -->
+  <!-- Scroll-triggered fade-in animation for sections and cards -->
   <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const observer = new IntersectionObserver(
-      entries => {
+    setTimeout(() => {
+      const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add("visible");
             observer.unobserve(entry.target);
           }
         });
-      },
-      { threshold: 0.2 }
-    );
-    document.querySelectorAll(".effort-card").forEach(card => observer.observe(card));
+      }, { threshold: 0.15 });
+
+      // Observe both cards and section wrappers
+      document.querySelectorAll(".effort-card, .fade-section").forEach(el =>
+        observer.observe(el)
+      );
+    }, 300);
   });
   </script>
 </body>
